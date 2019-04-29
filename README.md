@@ -135,6 +135,8 @@ Now, we can commit and push our changes to our repo in Github. It will automatic
 
 ![Build Passing](src/images/travis-build-passing.png)
 
+![Travis App README](src/images/travis-app-readme.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
