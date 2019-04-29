@@ -31,11 +31,11 @@ $ npm run build
 ```javascript
 $ npm test
 ```
-
+:skull: :warning: :no_entry_sign: :x:
 ```javascript
 $ npm run eject
 ```
-:skull: :warning: :no_entry_sign: :x:
+
 
 ## Setting up Continuous Integration Builds
 
