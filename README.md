@@ -35,13 +35,13 @@ The final contents of the file .travis.yml will be as follows:
 ```ruby
 language: node_js
 node_js:
-- "stable"
+    - "stable"
 cache:
 directories:
-- node_modules
+    - node_modules
 script:
-- npm test
-- npm run build
+    - npm test
+    - npm run build
 ```
 
 We will add this file in our project root folder like this and push it to our github repository.
