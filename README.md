@@ -12,7 +12,7 @@ First, start off by moving into wherever you want to develop your application. I
 
 This will start up a little development web server and give you a place to start working on your application. Running this will start up a development server at http://localhost:3000/ and give you a nice little starter template:
 
-[Welcome to React]()
+![Welcome to React](src/images/welcome.png)
 
     $ npm run build
 
@@ -30,29 +30,29 @@ The final contents of the file .travis.yml will be as follows:
 
 /.travis.yml
 
-    ```ruby
-    language: node_js
-    node_js:
-    - "stable"
-    cache:
-    directories:
-    - node_modules
-    script:
-    - npm test
-    - npm run build
-    ```
+```ruby
+language: node_js
+node_js:
+- "stable"
+cache:
+directories:
+- node_modules
+script:
+- npm test
+- npm run build
+```
 
 We will add this file in our project root folder like this and push it to our github repository.
 
-[Folder Structure]()
+![Folder Structure](src/images/folder-structure.png)
 
 In order to make this build file working, we need to link up our project to Travis. For that, we can go to our logged in account in Travis.
 
-[Travis Home]()
+![Travis Home](src/images/travis-home.png)
 
 And then click the + icon near to the My Repositories which will open a new window.
 
-[Travis Repo]()
+![Travis Repo](src/images/travis-repo.png)
 
 Then toggle the settings to enable the project. It will start the build process.
 
@@ -66,7 +66,7 @@ Add Token Description ex: travis-app
 
 Select Scopes by ticking the checkbox "repo"
 
-[Github Access Token]()
+![Github Access Token](src/images/github-access-token-repo.png)
 
 About permission, we need repo level access.
 
@@ -74,48 +74,48 @@ Copy the value of this token. This is a private token that gives access to your 
 
 Now we can go to our project build screen. Then navigate to the settings page and add the environment variables and paste the copied token as its value. Here I have named my variable as github_token.
 
-[Environment Variables]()
+![Environment Variables](src/images/environment-variables.png)
 
 To make our deployment work we need to add deployment script in our .travis.yml. Now, let's add it.
 
 /.travis.yml
 
-    ```ruby
-    language: node_js
-    node_js:
-    - "stable"
-    cache:
-    directories:
-    - node_modules
-    script:
-    - npm test
-    - npm run build
+```ruby
+language: node_js
+node_js:
+- "stable"
+cache:
+directories:
+- node_modules
+script:
+- npm test
+- npm run build
 
-    deploy:
-    provider: pages
-    skip_cleanup: true
-    github_token: $github_token
-    local_dir: build
-    on:
-        branch: master
-    ```
+deploy:
+provider: pages
+skip_cleanup: true
+github_token: $github_token
+local_dir: build
+on:
+    branch: master
+```
 
 Here, $github_token will read the access token value from our environment variables that we set previously.
 
 We need to let our app know which URL that it should look for. We can set the URL in our app package.json. In my case, it goes like..
 
-    ```javascript
-    {
-        "name": "travis-app",
-        "version": "0.1.0",
-        "private": true,
-        "homepage": "https://vivekkravindraa.github.io/travis-app/",
-        "dependencies": {
-            ........
-        }, 
-        ....
-    }
-    ```
+```javascript
+{
+    "name": "travis-app",
+    "version": "0.1.0",
+    "private": true,
+    "homepage": "https://vivekkravindraa.github.io/travis-app/",
+    "dependencies": {
+        ........
+    }, 
+    ....
+}
+```
 
 It could vary on others but the format is like this.
 
