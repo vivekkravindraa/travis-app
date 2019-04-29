@@ -42,11 +42,11 @@ First, make sure your react project is pushed into the GitHub and you have an ac
 
 The very first step in integrating Travis CI is to create a file named <b>.travis.yml</b> which will contain the essential information about the environment and configurations for the build to run.
 
-We will have to include the programming language and its version. In our project, version will be set to <b>stable<b> and also the locally installed node version will be mentioned.
+We will have to include the programming language and its version. In our project, version will be set to <b>stable</b> and also the locally installed node version will be mentioned.
 
 You can check by your current node version by running <code>node -v</code>.
 
-The final contents of the file <b>.travis.yml<b> will be as follows:
+The final contents of the file <b>.travis.yml</b> will be as follows:
 
 <b>/.travis.yml</b>
 
