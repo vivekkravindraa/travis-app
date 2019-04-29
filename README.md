@@ -85,21 +85,21 @@ To make our deployment work we need to add deployment script in our .travis.yml.
 ```ruby
 language: node_js
 node_js:
-- "stable"
+    - "stable"
 cache:
 directories:
-- node_modules
+    - node_modules
 script:
-- npm test
-- npm run build
+    - npm test
+    - npm run build
 
 deploy:
-provider: pages
-skip_cleanup: true
-github_token: $github_token
-local_dir: build
-on:
-    branch: master
+    provider: pages
+    skip_cleanup: true
+    github_token: $github_token
+    local_dir: build
+    on:
+        branch: master
 ```
 
 Here, $github_token will read the access token value from our environment variables that we set previously.
