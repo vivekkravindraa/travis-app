@@ -129,11 +129,11 @@ Now, we can commit and push our changes to our repo in Github. It will automatic
 
     vivekkravindraa.github.io
 
-[Travis App CI Build](src/images/travis-app-ci-build.png)
+![Travis App CI Build](src/images/travis-app-ci-build.png)
 
 # Adding Build Passing to README.md
 
-[Build Passing](src/images/travis-build-passing.png)
+![Build Passing](src/images/travis-build-passing.png)
 
 ## Available Scripts
 
