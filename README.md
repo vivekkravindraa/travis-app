@@ -2,6 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Creating Our First React App
 
+[![Build Status](https://travis-ci.org/vivekkravindraa/travis-app.svg?branch=master)](https://travis-ci.org/vivekkravindraa/travis-app)
+
 First, start off by moving into wherever you want to develop your application. In that directory, we’re going to create an app called “travis-app”:
 
     $ npx create-react-app travis-app
@@ -127,9 +129,11 @@ Now, we can commit and push our changes to our repo in Github. It will automatic
 
     vivekkravindraa.github.io
 
+[Travis App CI Build](src/images/travis-app-ci-build.png)
+
 # Adding Build Passing to README.md
 
-[Build Passing]()
+[Build Passing](src/images/travis-build-passing.png)
 
 ## Available Scripts
 
