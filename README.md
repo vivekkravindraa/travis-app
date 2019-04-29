@@ -6,17 +6,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 First, start off by moving into wherever you want to develop your application. In that directory, we’re going to create an app called “travis-app”:
 
-    ```javascript
-    $ npx create-react-app travis-app
-    ```
+```javascript
+$ npx create-react-app travis-app
+```
 
-    ```javascript
-    $ cd travis-app
-    ```
+```javascript
+$ cd travis-app
+```
 
-    ```javascript
-    $ npm start
-    ```
+```javascript
+$ npm start
+```
 
 This will start up a little development web server and give you a place to start working on your application. Running this will start up a development server at http://localhost:3000/ and give you a nice little starter template:
 
@@ -24,17 +24,17 @@ This will start up a little development web server and give you a place to start
 
 Reference CLIs:
 
-    ```javascript
-    $ npm run build
-    ```
+```javascript
+$ npm run build
+```
 
-    ```javascript
-    $ npm test
-    ```
+```javascript
+$ npm test
+```
 
-    ```javascript
-    $ npm run eject :skull: :warning: :no_entry_sign: :x:
-    ```
+```javascript
+$ npm run eject :skull: :warning: :no_entry_sign: :x:
+```
 
 ## Setting up Continuous Integration Builds
 
