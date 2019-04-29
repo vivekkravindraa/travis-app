@@ -36,27 +36,31 @@ $ npm test
 $ npm run eject
 ```
 
-
 ## Setting up Continuous Integration Builds
 
-First, make sure your react project is pushed into the GitHub and you have an account in TravisCI.
+First, make sure your react project is pushed into the GitHub and you have an account in Travis CI.
 
-The very first step in integrating Travis CI is to create a file named .travis.yml which will contain the essential information about the environment and configurations for the build to run. For simplicity, we will just include the programming environment and the version. In our simple project, it is NodeJS version will be set to stable and also the node version will be mentioned. You can check by your current node version by running <code>node -v</code>.
+The very first step in integrating Travis CI is to create a file named <b>.travis.yml</b> which will contain the essential information about the environment and configurations for the build to run.
 
-The final contents of the file .travis.yml will be as follows:
+We will have to include the programming language and its version. In our project, version will be set to <b>stable<b> and also the locally installed node version will be mentioned.
 
-/.travis.yml
+You can check by your current node version by running <code>node -v</code>.
+
+The final contents of the file <b>.travis.yml<b> will be as follows:
+
+<b>/.travis.yml</b>
 
 ```ruby
 language: node_js
 node_js:
     - "stable"
+    - 10.14.1
 cache:
-directories:
-    - node_modules
-script:
-    - npm test
-    - npm run build
+    directories:
+        - node_modules
+    script:
+        - npm test
+        - npm run build
 ```
 
 We will add this file in our project root folder like this and push it to our github repository.
@@ -75,17 +79,17 @@ Then toggle the settings to enable the project. It will start the build process.
 
 ## Setting up auto deployment to GitHub Pages
 
-In order to deploy to the github pages, we need to provide access_token to our build file. To obtain a new access_token we can go to.
+In order to deploy to the github pages, we need to provide access-token to our build file. To obtain a new access-token we can go to:
 
-Settings > Developer Settings > Personal Access Tokens
+GitHub Profile > Settings > Developer Settings > Personal Access Tokens
 
-Add Token Description ex: travis-app
+Add Token Description - ex: travis-app
 
-Select Scopes by ticking the checkbox "repo"
+Select Scopes - About permission, we need repo level access.
+
+And click on Update / Generate the token.
 
 ![Github Access Token](src/images/github-access-token-repo.png)
-
-About permission, we need repo level access.
 
 Copy the value of this token. This is a private token that gives access to your GitHub repos.
 
@@ -138,9 +142,11 @@ It could vary on others but the format is like this.
 
     https://<usename>.github.io/<repository_name>/
 
-Now, we can commit and push our changes to our repo in Github. It will automatically trigger the build. After successful completion of our build, it will deploy our project into the gh-pages. Thus resulting our app running in the URL which in my case is:
+Now, we can commit and push our changes to our repo in Github. It will automatically trigger the build. After successful completion of our build, it will deploy our project into the gh-pages.
 
-    Travis App
+Thus resulting our app running in the URL which in my case is:
+
+    travis-app
 
     vivekkravindraa.github.io
 
@@ -148,9 +154,15 @@ Now, we can commit and push our changes to our repo in Github. It will automatic
 
 ## Adding build passing to README.md
 
+Click on the build passing image beside repo and mention the Markdown in the dropdown.
+
+Copy the URL generated for the build passing and paste it in README.md!
+
 ![Build Passing](src/images/travis-build-passing.png)
 
 ![Travis App README](src/images/travis-app-readme.png)
+
+That gets the job done!
 
 ##### Vivek Ravindra :neckbeard: :bowtie: :octocat:
 
