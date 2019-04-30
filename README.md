@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 First, start off by moving into wherever you want to develop your application. In that directory, we’re going to create an app called “travis-app”:
 
 ```javascript
-$ npx create-react-app travis-app
+<b>$ npx create-react-app travis-app</b>
 ```
 
 ```javascript
@@ -50,6 +50,7 @@ The final contents of the file <b>.travis.yml</b> will be as follows:
 
 <b>/.travis.yml</b>
 
+<b>
 ```ruby
 language: node_js
 node_js:
@@ -62,6 +63,7 @@ cache:
         - npm test
         - npm run build
 ```
+</b>
 
 We will add this file in our project root folder like this and push it to our github repository.
 
