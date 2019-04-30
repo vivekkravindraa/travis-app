@@ -71,7 +71,7 @@ In order to make this build file working, we need to link up our project to Trav
 
 ![Travis Home](src/images/travis-home.png)
 
-And then click the + icon near to the My Repositories which will open a new window.
+And then click the <b>+</b> icon near to the My Repositories which will open a new window.
 
 ![Travis Repo](src/images/travis-repo.png)
 
@@ -81,9 +81,9 @@ Then toggle the settings to enable the project. It will start the build process.
 
 In order to deploy to the github pages, we need to provide access-token to our build file. To obtain a new access-token we can go to:
 
-GitHub Profile > Settings > Developer Settings > Personal Access Tokens
+<b>GitHub Profile > Settings > Developer Settings > Personal Access Tokens</b>
 
-Add Token Description - ex: travis-app
+Add Token Description - ex: travisci
 
 Select Scopes - About permission, we need repo level access.
 
