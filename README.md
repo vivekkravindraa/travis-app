@@ -158,6 +158,8 @@ Click on the build passing image beside repo and mention the Markdown in the dro
 
 Copy the URL generated for the build passing and paste it in README.md!
 
+Commit the changes and push to github.
+
 ![Build Passing](src/images/travis-build-passing.png)
 
 ![Travis App README](src/images/travis-app-readme.png)
