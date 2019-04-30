@@ -3,11 +3,11 @@ node_js:
   - "stable"
   - 10.14.1
 cache:
-directories:
-  - node_modules
-script:
-  - npm test
-  - npm run build
+  directories:
+    - node_modules
+  script:
+    - npm test
+    - npm run build
 
 deploy:
   provider: pages
