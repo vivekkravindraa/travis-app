@@ -99,7 +99,7 @@ Now we can go to our project build screen. Then navigate to the settings page an
 
 To make our deployment work we need to add deployment script in our .travis.yml. Now, let's add it.
 
-/.travis.yml
+<b>/.travis.yml</b>
 
 ```ruby
 language: node_js
