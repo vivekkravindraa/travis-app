@@ -140,7 +140,7 @@ We need to let our app know which URL that it should look for. We can set the UR
 
 It could vary on others but the format is like this.
 
-    https://<usename>.github.io/<repository_name>/
+    https://<username>.github.io/<repository_name>/
 
 Now, we can commit and push our changes to our repo in Github. It will automatically trigger the build. After successful completion of our build, it will deploy our project into the gh-pages.
 
