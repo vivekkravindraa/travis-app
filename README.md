@@ -97,7 +97,7 @@ Now we can go to our project build screen. Then navigate to the settings page an
 
 ![Environment Variables](src/images/environment-variables.png)
 
-To make our deployment work we need to add deployment script in our .travis.yml. Now, let's add it.
+To make our deployment work we need to add deployment script in our <b>.travis.yml<b>. Now, let's add it.
 
 <b>/.travis.yml</b>
 
